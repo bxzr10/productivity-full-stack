@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    font-family: Inconsolata;
+    margin: 1em;
+}
+
+h1, h2, h2 {
+    font-family: 'Press Start 2P';
+}
+
+input {
+    padding: 0.5em;
+}
+
+button {
+    cursor: pointer;
+    margin: 0 0.3em;
+}
+
+.button-delete {
+    background-color: transparent;
+    border: 3px solid black;
+    color: red;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.button-invisible {
+    all: unset;
+    cursor: pointer;
+}
+
+.button-invisible:focus {
+    outline: revert;
+}
+
+#button-new-item {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    margin: 0;
+}
+
+.editor-field {
+    margin: 1em;
+}
+
+.error-container {
+    color: red;
+    font-size: 1.2em;
+    margin: 2em;
+}
+
+.DragItem {
+    background-color: aquamarine;
+    cursor: move;
+    z-index: 10;
+}
+
+.DragItem form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.drop-area-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.DropArea {
+    border: 1px solid green;
+    min-height: 50px;
+    width: 42%;
+}
+
+.drop-area-title {
+    color: black;
+    margin: 0.4em;
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-clickable {
+    color: red;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+#MonthPage {
+    display: flex;
+}
+
+#ProjectEditor {
+    background-color: lightgray;
+}
+
+.project-display-container, .Outlet {
+    width: 45%;
+}
+
+.Outlet {
+    border-left: 2px solid black;
+}
+
+.Project {
+    background-color: blue;
+    color: white;
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.project-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.react-datepicker-wrapper, 
+.react-datepicker__input-container {
+    margin: 0;
+}
+
+.select-date-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#monthly-item-input {
+    display: flex;
+}
+
+#item-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 0;
+}
+
+.item-display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.item-display-list {
+    margin: 0.3em auto;
+    min-width: 90%;
+}
+
+#item-input {
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .header-container {
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+    }
+
+    .header-right {
+        flex-direction: column-reverse;
+    }
+
+    .header-clickable {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #MonthPage {
+        flex-wrap: wrap;
+    }
+
+    .project-display-container, .Outlet {
+        width: 100%;
+    }
+
+    .Outlet {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header-container {
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+    }
+
+    .header-right {
+        flex-direction: column-reverse;
+    }
+}
