@@ -11,19 +11,6 @@ const useItemsAllQuery = () => useQuery({
     queryKey: itemQK.getAll, 
     queryFn: () => apiGetItemsAll() });
 
-/*
-    ISSUE: state is undefined when loading /month or /month/project page(s) directly. Reducer state ends up loading on MonthPage but, following that, the useSelector call to selectProjectById references a reducer with state = undefined
-    WORKAROUND: Pass the project object directly to Outlet props
-    REPRO: Change ProjectEditor, MonthPage, and Project to ingest id and call useSelector to get the project by id. Refresh /march or /march/projects directly. Click on a project.
-    // const project = useSelector(state => selectProjectById(state, id));
-    // console.log('PROJECT EDITOR info', monthName, project);
-    
-    same issue w items and selectItemsInProject *note, no 's'
-
-    It works if you go to YearPage and THEN go to Monthpage > projects
-
-    MAYBE THE WORST WORKAROUND OF ALL? Navigate back to /month page if there is no project. Problem solved...
-*/
 
 function MonthPage() {
 

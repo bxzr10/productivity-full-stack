@@ -3,8 +3,6 @@ const { readProjects, readProjectById, readProjectByMonth, updateProject, create
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-// can i handle these as promises? for catching errors?
-
 // PROJECTS
 
 exports.getProjectsAll = async (req, res, next) => {
