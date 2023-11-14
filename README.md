@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Description
 
-A personal project to practice React and Express by creating my own full-stack application. It is intended to funcation as a minimal yearly planning app, utilizing React useReducer for state management and React Query to make HTTP requests through a custom API, which interfaces with an Express back-end that queries a PostgreSQL database.
+A personal project I'm still currently working on, intended to practice React and Express by creating my own full-stack application. It currently functions as a bare-minimum yearly planning app, utilizing React useReducer for state management and React Query to make HTTP requests through a custom API, which interfaces with an Express back-end that queries a PostgreSQL database.
 
 ## To Run This Project
 
